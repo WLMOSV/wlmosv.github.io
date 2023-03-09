@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta name="description" content="Live2D 看板娘 v1.4 &#x2F; Demo 3            Live2D 看板娘 v1.4 &#x2F; Demo 3      - 内置 waifu-tips.json (博客园等网站引用推荐)              Demo 1 - 常规引用         Demo 2 - 自动加载 autoload.js         Demo 3 (当前面页)">
 <meta property="og:type" content="website">
-<meta property="og:title" content="wlmosv">
+<meta property="og:title" content="welcome to wlmosv blog">
 <meta property="og:url" content="http://example.com/assets/live2d_demo-master/demo3-waifu-tips.html">
-<meta property="og:site_name" content="wlmosv">
+<meta property="og:site_name" content="welcome to wlmosv blog">
 <meta property="og:description" content="Live2D 看板娘 v1.4 &#x2F; Demo 3            Live2D 看板娘 v1.4 &#x2F; Demo 3      - 内置 waifu-tips.json (博客园等网站引用推荐)              Demo 1 - 常规引用         Demo 2 - 自动加载 autoload.js         Demo 3 (当前面页)">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-02-25T15:31:12.659Z">
@@ -36,7 +36,7 @@
       
     
     <!-- title -->
-    <title>wlmosv</title>
+    <title>welcome to wlmosv blog</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -62,7 +62,7 @@
     
   
     <div id="title">
-      <h1>wlmosv</h1>
+      <h1>welcome to wlmosv blog</h1>
     </div>
   </a>
   <div id="nav">
@@ -401,32 +401,40 @@
 </article>
 
         
-        <footer id="footer">
-  <div class="footer-left">
-    Copyright &copy;
-    
-    
-    2016-2023
-    bunny
-  </div>
-  <div class="footer-right">
-    <nav>
-      <ul>
-        <!--
-       --><li><a href="/">首页</a></li><!--
-     --><!--
-       --><li><a href="/about/">关于</a></li><!--
-     --><!--
-       --><li><a href="/archives/">归档</a></li><!--
-     --><!--
-       --><li><a target="_blank" rel="noopener" href="http://github.com/wlmosv.github.io">项目</a></li><!--
-     --><!--
-       --><li><a href="/search/">搜索</a></li><!--
-     -->
-      </ul>
-    </nav>
-  </div>
+        
+ter id="footer">
+      <div class="footer-left">
+        <%= __('footer.copyright') %> &copy;
+        <% var endYear = (theme.copyright && theme.copyright.end_year) ? theme.copyright.end_year : new Date().getFullYear() %>
+        <% var startYear = (theme.copyright && theme.copyright.start_year) ? theme.copyright.start_year : new Date().getFullYear() %>
+        <%= startYear >= endYear ? endYear : startYear + "-" + endYear %>
+        <%= config.author || config.title %>
+      </div>
+      <div class="footer-right">
+        <nav>
+          <ul>
+            <% for (var i in theme.nav) { %><!--
+          --><li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li><!--
+        --><% } %>
+          </ul>
+          <ul>
+            <% if (theme.busuanzi && theme.busuanzi.enable){ %>
+              <!-- 不蒜子统计 -->
+              <span id="busuanzi_container_site_pv">
+                  本站总访问量<span id="busuanzi_value_site_pv"></span>次
+              </span>
+              <span class="post-meta-divider">|</span>
+              <span id="busuanzi_container_site_uv" style='display:none'>
+                      本站访客数<span id="busuanzi_value_site_uv"></span>人
+              </span>
+            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <% } %>
+          </ul>
+        </nav>
+      </div>
+      
 </footer>
+
 
     </div>
     <!-- styles -->

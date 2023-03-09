@@ -1,4 +1,4 @@
-!
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>!
 function(t) {
 	function i(r) {
 		if (e[r]) return e[r].exports;
