@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>wlmosv</title>
+  <icon>http://example.com/icon.png</icon>
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-04-21T22:54:48.097Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>bunny</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gentoo双显卡设置单nvidia</title>
+    <link href="http://example.com/2024/04/20/Gentoo%E5%8F%8C%E6%98%BE%E5%8D%A1%E8%AE%BE%E7%BD%AE%E5%8D%95nvidia/"/>
+    <id>http://example.com/2024/04/20/Gentoo%E5%8F%8C%E6%98%BE%E5%8D%A1%E8%AE%BE%E7%BD%AE%E5%8D%95nvidia/</id>
+    <published>2024-04-20T13:24:25.000Z</published>
+    <updated>2024-04-21T22:54:48.097Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;安装nvidia驱动&quot;&gt;&lt;a href=&quot;#安装nvidia驱动&quot; class=&quot;headerlink&quot; title=&quot;安装nvidia驱动&quot;&gt;&lt;/a&gt;安装nvidia驱动&lt;/h1&gt;&lt;h3 id=&quot;话不多说直接上图&quot;&gt;&lt;a href=&quot;#话不多说直接上图&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="gentoo" scheme="http://example.com/categories/gentoo/"/>
+    
+    
+    <category term="linux" scheme="http://example.com/tags/linux/"/>
+    
+  </entry>
+  
+</feed>
