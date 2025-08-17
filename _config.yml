@@ -42,10 +42,10 @@ deploy:
 theme: icarus
 
 backup:
-    type: git
-    repository:
-       github: git@github.com:WLMOSV/wlmosv.git,backup
-       gitcafe: git@github.com:WLMOSV/wlmosv.git,backup
+  type: git
+  message: "backup"
+  repository:
+    github: https://github.com/WLMOSV/wlmosv.github.io.git,backup
 
 
 
