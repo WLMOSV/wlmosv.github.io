@@ -40,14 +40,9 @@ deploy:
 
 # 主题名称
 theme: icarus
-
 backup:
   type: git
   message: "backup"
   repository:
-    github: git@github.com:WLMOSV/wlmosv.github.io.git
-
-
-
-
+    github: git@github.com:WLMOSV/wlmosv.github.io.git,backup
 
