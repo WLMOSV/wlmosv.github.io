@@ -1,0 +1,55 @@
+# Hexo 主配置
+title: WLMOSV Blog
+subtitle: ''
+description: 我的个人博客
+keywords: blog, Hexo, Icarus
+author: WLMOSV
+language: zh
+timezone: Asia/Shanghai
+url: https://wlmosv.github.io
+permalink: ':year/:month/:day/:title/'
+new_post_name: ':title.md'
+default_layout: post
+titlecase: false
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: ':lang'
+future: true
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  wrap: true
+
+# 分页
+per_page: 10
+pagination_dir: page
+
+# 部署设置
+deploy:
+  type: git
+  repo: git@github.com:WLMOSV/wlmosv.github.io.git
+  branch: main
+
+# 主题名称
+theme: icarus
+
+backup:
+    type: git
+    repository:
+       github: git@github.com:WLMOSV/wlmosv.git,backup
+       gitcafe: git@github.com:WLMOSV/wlmosv.git,backup
+
+
+
+
+
+
+
