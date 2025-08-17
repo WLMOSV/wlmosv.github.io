@@ -1,8 +1,18 @@
+# 系统文件
 .DS_Store
 Thumbs.db
+
+# Hexo 自动生成文件
 db.json
 *.log
 node_modules/
 public/
-.deploy*/
+.deploy_git/
+
+# Hexo 多配置或临时文件
 _multiconfig.yml
+package-lock.json
+
+# 主题目录的 Git 文件
+themes/*/.git/
+
