@@ -45,9 +45,7 @@ backup:
   type: git
   message: "backup"
   repository:
-    github: https://github.com/WLMOSV/wlmosv.github.io.git,backup
-
-
+    github: git@github.com:WLMOSV/wlmosv.github.io.git
 
 
 
