@@ -1,6 +1,6 @@
 # Hexo 主配置
-title: WLMOSV Blog
-subtitle: ''
+title: WLMOSV 
+subtitle: 'bunnys'
 description: 我的个人博客
 keywords: blog, Hexo, Icarus
 author: WLMOSV
@@ -40,8 +40,16 @@ deploy:
 
 # 主题名称
 theme: icarus
+
 backup:
-  type: git
-  repository:
-    github: git@github.com:WLMOSV/wlmosv.github.io.git,backup
+    type: git
+    repository:
+       github: git@github.com:WLMOSV/wlmosv.git,backup
+       gitcafe: git@github.com:WLMOSV/wlmosv.git,backup
+
+
+
+
+
+
 
